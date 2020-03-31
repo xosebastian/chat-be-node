@@ -7,9 +7,6 @@ import socket from 'socket.io';
  
 import config from "./config/env.config";
 import Logger from "./config/logger.config";
-import ChatRouter from './routes/chat.route';
-
-
 
 const app = express();
 let server = http.createServer(app);
@@ -46,7 +43,7 @@ io.on('connection', ( client ) =>{
 
 })
 
-ChatRouter.routesConfig(app);
+// ChatRouter.routesConfig(app);
 
 server.listen(config.port, function () {
   console.log("\x1b[34m", 'Application listening at port '+ config.port , "\x1b[0m");
