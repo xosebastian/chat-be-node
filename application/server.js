@@ -27,7 +27,7 @@ app.use(Logger)
 let io = socket(server);
 
 
-/*/io.set('origins', 'https://chat-fe-react.herokuapp.com:80');
+//io.set('origins', 'https://chat-fe-react.herokuapp.com:80');
 
 io.on('connection', ( client ) =>{
   console.log('Usuario conectado');
