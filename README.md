@@ -6,8 +6,6 @@ para dev ejecutar...
 
 ## `npm run dev`
 
-# levantar mongod
+## example
 
-em servidor utilizar
-
-## `npm start`
+https://chat-fe-react.herokuapp.com/#/
