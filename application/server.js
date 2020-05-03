@@ -12,7 +12,7 @@ const app = express();
 let server = http.createServer(app);
 
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://chat-fe-react.herokuapp.com');
+  res.header('Access-Control-Allow-Origin', 'https://herokuapp.com');
   res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
   res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
@@ -27,7 +27,7 @@ app.use(Logger)
 let io = socket(server);
 
 
-io.set('origins', 'https://chat-fe-react.herokuapp.com:80');
+/*/io.set('origins', 'https://chat-fe-react.herokuapp.com:80');
 
 io.on('connection', ( client ) =>{
   console.log('Usuario conectado');
