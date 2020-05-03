@@ -27,6 +27,8 @@ app.use(Logger)
 let io = socket(server);
 
 
+io.set('origins', 'http://herokuapp.com/');
+
 io.on('connection', ( client ) =>{
   console.log('Usuario conectado');
   
