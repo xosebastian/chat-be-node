@@ -19,7 +19,7 @@ app.use(Logger)
 let io = socket(server);
 
 
-io.set('origins', 'https://herokuapp.com:8080');
+io.set('origins', 'herokuapp.com:*');
 
 io.on('connection', ( client ) =>{
   console.log('Usuario conectado');
